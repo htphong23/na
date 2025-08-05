@@ -1,0 +1,126 @@
+.table tr td img {
+  width: 40px;
+  height: 40px !important;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+td i {
+  cursor: pointer;
+}
+td,
+th {
+  color: var(--primary-color);
+}
+
+.active-edit {
+  background-color: gray;
+}
+
+/* Cart Buttons Styling */
+.cart-buttons {
+  margin-top: 20px;
+}
+
+.cart-button {
+  display: block;
+  width: 100%;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cart-button:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: inherit;
+}
+
+.cart-button.continue-btn {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.cart-button.continue-btn:hover {
+  background: linear-gradient(135deg, #45a049 0%, #3d8b40 100%);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+  color: white;
+}
+
+.cart-button.checkout-btn {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.cart-button.checkout-btn:hover {
+  background: linear-gradient(135deg, #f7931e 0%, #e55a2b 100%);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+  color: white;
+}
+
+.cart-button.disabled {
+  background: #e0e0e0;
+  color: #999;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.cart-button.disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Button with icon */
+.cart-button i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Table improvements */
+.table {
+  font-size: 14px;
+}
+
+.table th {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 8px;
+}
+
+.table td {
+  padding: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cart-button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  
+  .table tr td img {
+    width: 35px;
+    height: 35px !important;
+  }
+  
+  .table {
+    font-size: 12px;
+  }
+  
+  .table th,
+  .table td {
+    padding: 6px 4px;
+  }
+}

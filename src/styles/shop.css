@@ -1,0 +1,212 @@
+/* Shop Page Styles */
+
+/* Shop Header */
+.shop-header {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  color: white;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.header-subtitle {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #f0f0f0;
+  opacity: 0.9;
+}
+
+.header-image {
+  margin-top: 30px;
+}
+
+.header-img {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Filter Section */
+.filter-section {
+  padding: 40px 0;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.category-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.category-filter label {
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.category-select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: white;
+  font-size: 14px;
+  min-width: 150px;
+}
+
+.category-select:focus {
+  outline: none;
+  border-color: #ff6b35;
+}
+
+/* Search Container */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 45px 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 14px;
+  background: white;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 2px rgba(255, 107, 53, 0.1);
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  color: #666;
+  font-size: 18px;
+}
+
+/* Products Section */
+.products-section {
+  padding: 40px 0;
+  background: white;
+}
+
+.products-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.products-info h4 {
+  color: #333;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* No Products */
+.no-products {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+}
+
+.no-products h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.no-products p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 36px;
+  }
+  
+  .header-subtitle {
+    font-size: 18px;
+  }
+  
+  .header-img {
+    height: 200px;
+  }
+  
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  
+  .category-filter {
+    justify-content: space-between;
+  }
+  
+  .category-select {
+    min-width: 120px;
+  }
+  
+  .search-input {
+    padding: 10px 40px 10px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .shop-header {
+    padding: 40px 0;
+  }
+  
+  .header-title {
+    font-size: 28px;
+  }
+  
+  .header-subtitle {
+    font-size: 16px;
+  }
+  
+  .header-img {
+    height: 150px;
+  }
+  
+  .filter-section {
+    padding: 30px 0;
+  }
+  
+  .products-section {
+    padding: 30px 0;
+  }
+  
+  .category-filter {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  
+  .category-filter label {
+    text-align: center;
+  }
+}
