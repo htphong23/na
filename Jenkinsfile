@@ -26,7 +26,7 @@ pipeline {
         stage('Restore Packages') {
             steps {
                 echo 'Restoring NuGet packages...'
-                bas 'dotnet restore'
+                sh 'dotnet restore'
             }
         }
 
