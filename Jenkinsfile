@@ -5,6 +5,9 @@
 
 pipeline {
     agent any
+    environment {
+        PATH = "/bin:/usr/bin:/usr/local/bin:/usr/local/share/dotnet:${PATH}"
+    }
     // environment {
     //     LANG = 'en_US.UTF-8'
     //     LC_ALL = 'en_US.UTF-8'
