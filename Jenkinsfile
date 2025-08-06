@@ -33,7 +33,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                sh 'dotnet build --configuration Release'
+                bas 'dotnet build --configuration Release'
             }
         }
 
