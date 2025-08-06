@@ -26,30 +26,30 @@ pipeline {
         stage('Restore Packages') {
             steps {
                 echo 'Restoring NuGet packages...'
-                bat 'dotnet restore'
+                sh 'dotnet restore'
             }
         }
 
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                bat 'dotnet build --configuration Release'
+                sh 'dotnet build --configuration Release'
             }
         }
 
         stage('Run Tests') {
             steps {
                 echo 'Running unit tests...'
-                bat 'dotnet test --no-build --verbosity normal'
+                sh 'dotnet test --no-build --verbosity normal'
             }
         }
 
         stage('Publish to Folder') {
             steps {
                 echo 'Cleaning old publish folder...'
-                bat 'if exist "%WORKSPACE%\\publish" rd /s /q "%WORKSPACE%\\publish"'
+                sh 'if exist "%WORKSPACE%\\publish" rd /s /q "%WORKSPACE%\\publish"'
                 echo 'Publishing to temporary folder...'
-                bat 'dotnet publish -c Release -o "%WORKSPACE%\\publish"'
+                sh 'dotnet publish -c Release -o "%WORKSPACE%\\publish"'
             }
         }
 
