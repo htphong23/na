@@ -19,7 +19,7 @@ pipeline {
         stage('Clone') {
             steps {
                 echo 'Cloning source code'
-                git branch: 'main', url: 'https://github.com/htphong23/nhahang.git'
+                git branch: 'main', url: 'https://github.com/htphong23/na.git'
             }
         }
 
